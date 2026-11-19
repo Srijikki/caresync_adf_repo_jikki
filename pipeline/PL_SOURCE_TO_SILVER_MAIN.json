@@ -109,7 +109,7 @@
 							}
 						},
 						{
-							"name": "Insert In Progress Status_copy1",
+							"name": "Update Failed Status",
 							"type": "Script",
 							"dependsOn": [
 								{
