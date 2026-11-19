@@ -51,7 +51,7 @@
 					"isSequential": false,
 					"activities": [
 						{
-							"name": "Execute Pipeline1",
+							"name": "Ingest from Source to Silver",
 							"type": "ExecutePipeline",
 							"dependsOn": [
 								{
@@ -117,7 +117,7 @@
 							"type": "Script",
 							"dependsOn": [
 								{
-									"activity": "Execute Pipeline1",
+									"activity": "Ingest from Source to Silver",
 									"dependencyConditions": [
 										"Failed"
 									]
