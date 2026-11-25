@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-caresync-jikki"
+		},
+		"ls_postgresql_password": {
+			"value": ""
+		},
+		"ls_adls_properties_typeProperties_url": {
+			"value": "https://caresyncprojectjikki.dfs.core.windows.net/"
+		},
+		"ls_azuredatabricks_properties_typeProperties_existingClusterId": {
+			"value": "1119-070142-rid14syj"
+		},
+		"ls_azuresqldatabase_properties_typeProperties_server": {
+			"value": "caresync-server-jikki.database.windows.net"
+		},
+		"ls_azuresqldatabase_properties_typeProperties_database": {
+			"value": "sql-db-caresync"
+		},
+		"ls_azuresqldatabase_properties_typeProperties_userName": {
+			"value": "srijikki"
+		},
+		"ls_keyvault_properties_typeProperties_baseUrl": {
+			"value": "https://caresync-keyvault-jikki.vault.azure.net/"
+		},
+		"ls_postgresql_properties_typeProperties_server": {
+			"value": "ep-falling-snow-azboze8c-pooler.c-3.ap-southeast-1.aws.neon.tech"
+		},
+		"ls_postgresql_properties_typeProperties_database": {
+			"value": "neondb"
+		},
+		"ls_postgresql_properties_typeProperties_username": {
+			"value": "neondb_owner"
+		}
+	}
+}
