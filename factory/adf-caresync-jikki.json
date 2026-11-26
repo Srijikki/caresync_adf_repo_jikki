@@ -2,7 +2,7 @@
 	"name": "adf-caresync-jikki",
 	"properties": {
 		"globalParameters": {
-			"email recipients": {
+			"email_recipients": {
 				"type": "string",
 				"value": "sriramm270599@gmail.com"
 			},
