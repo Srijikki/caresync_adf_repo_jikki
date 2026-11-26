@@ -99,7 +99,7 @@
 					"source": {
 						"type": "AzureSqlSource",
 						"sqlReaderQuery": {
-							"value": "select count(*) as count from ctrl.audit_log\nwhere adf_run_id='@{pipeline().parameters.adf_run_id}'\nand status!= 'SUCCESS'",
+							"value": "select count(*) as count from ctrl.audit_log\nwhere adf_run_id='@{pipeline().parameters.adf_run_id}'\nand status!='SUCCESS'",
 							"type": "Expression"
 						},
 						"queryTimeout": "02:00:00",
@@ -148,7 +148,7 @@
 				"typeProperties": {
 					"variableName": "logic_apps_body",
 					"value": {
-						"value": "{\n  \"subject\":\"@{variables('email_subject')}\",\n  \"email_recipients\":\"@{pipeline().globalParameters.email_recipients}\",\n  \"body_header\": \"@{variables('body_header')}\",\n  \"body_footer\": \"@{variables('body_footer')}\",\n  \"status_table\":activity('Read All Table Status').output.value\n}",
+						"value": "{\n  \"subject\":\"@{variables('email_subject')}\",\n  \"email_recipients\":\"@{pipeline().globalParameters.email_recipients}\",\n  \"body_header\": \"@{variables('body_header')}\",\n  \"body_footer\": \"@{variables('body_footer')}\",\n  \"status_table\":@{activity('Read All Table Status').output.value}\n}",
 						"type": "Expression"
 					}
 				}
