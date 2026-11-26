@@ -1,0 +1,12 @@
+{
+	"name": "adf-caresync-jikki",
+	"properties": {
+		"globalParameters": {
+			"email recipients": {
+				"type": "string",
+				"value": "sriramm270599@gmail.com"
+			}
+		}
+	},
+	"location": "centralindia"
+}
